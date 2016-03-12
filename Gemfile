@@ -33,15 +33,17 @@ gem 'puma'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'rails_12factor', group: :production
-gem 'pg', group: :production
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+end
+
+group :production do
+    gem 'rails_12factor'
+    gem 'pg'
 end
 
 group :development do
