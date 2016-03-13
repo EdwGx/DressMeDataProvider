@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   resources :variables
   get 'var/:name' => "variables#name"
-  post 'add' => "pages#parse_clothes"
+  get 'add/:text' => "pages#parse_clothes"
   get 'rand' => "pages#get_random_clothes"
   get "res/:text" => "pages#response_suggestion"
   get "good_for/:text" => "pages#good_for_situation"
