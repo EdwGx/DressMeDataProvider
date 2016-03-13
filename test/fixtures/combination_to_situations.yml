@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  combination_id: 
+  situation_id: 
+  score: 1
+
+two:
+  combination_id: 
+  situation_id: 
+  score: 1

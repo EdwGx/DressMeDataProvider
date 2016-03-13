@@ -1,7 +1,19 @@
 Rails.application.routes.draw do
-  root 'variables#index'
+  resources :suggestions
+    root 'pages#home'
+  resources :tags
+  resources :situations
+  resources :colors
+  resources :clothes
+  resources :articles
+
   resources :variables
   get 'var/:name' => "variables#name"
+  post 'add' => "pages#parse_clothes"
+  get 'rand' => "pages#get_random_clothes"
+  get "res/:text" => "pages#response_suggestion"
+  get "good_for/:text" => "pages#good_for_situation"
+  get "give/:text" => "pages#give_suggestion"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

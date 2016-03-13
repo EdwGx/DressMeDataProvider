@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  article_id: 
+  color_id: 
+  raw_description: MyString
+  score: 
+
+two:
+  article_id: 
+  color_id: 
+  raw_description: MyString
+  score: 
